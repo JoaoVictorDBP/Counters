@@ -1,0 +1,55 @@
+library ieee;
+use ieee.numeric_std.all;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+Library work;
+
+entity o16BitCounter is
+	port(
+		Clk : in std_logic;
+		HEX00, HEX01, HEX02, HEX03, HEX04, HEX05, HEX06, HEX10, HEX11, HEX12, HEX13, HEX14, HEX15, HEX16, HEX20, HEX21, HEX22, HEX23, HEX24, HEX25, HEX26,
+		HEX30, HEX31, HEX32, HEX33, HEX34, HEX35, HEX36 : out std_logic
+	);
+end o16BitCounter;
+
+architecture contador of o16BitCounter is
+signal Q : integer range 0 to 65535;
+signal bin1 : std_logic_vector(15 downto 0);
+
+COMPONENT aula4
+	PORT(B0 : IN STD_LOGIC;
+     	B1 : IN STD_LOGIC;
+     	B2 : IN STD_LOGIC;
+     	B3 : IN STD_LOGIC;
+     	D0 : OUT STD_LOGIC;
+     	D1 : OUT STD_LOGIC;
+     	D2 : OUT STD_LOGIC;
+     	D3 : OUT STD_LOGIC;
+     	D4 : OUT STD_LOGIC;
+     	D5 : OUT STD_LOGIC;
+     	D6 : OUT STD_LOGIC
+	);
+END COMPONENT;
+begin
+		process(Clk, Enable, Clear)
+		begin
+			if(rising_edge(Clk)) then
+				if(Clear='1') then
+					Q <= 0;
+				elsif(Enable='1') then
+					Q <= Q + 1;
+				end if;
+			end if;
+			bin1 <= std_logic_vector(to_unsigned(Q, 16));
+		end process;
+		bin <= bin1;
+		display0 : aula4
+			port map( B0 => bin(0), B1 => bin(1), B2 => bin(2), B3 => bin(3), D0 => HEX00, D1 => HEX01, D2 => HEX02, D3 => HEX03, D4 => HEX04, D5 => HEX05, D6 => HEX06);
+		display1 : aula4
+			port map( B0 => bin(4), B1 => bin(5), B2 => bin(6), B3 => bin(7), D0 => HEX10, D1 => HEX11, D2 => HEX12, D3 => HEX13, D4 => HEX14, D5 => HEX15, D6 => HEX16);
+		display2 : aula4
+			port map( B0 => bin(8), B1 => bin(9), B2 => bin(10), B3 => bin(11), D0 => HEX20, D1 => HEX21, D2 => HEX22, D3 => HEX23, D4 => HEX24, D5 => HEX25, D6 => HEX26);
+		display3 : aula4
+			port map( B0 => bin(12), B1 => bin(13), B2 => bin(14), B3 => bin(15), D0 => HEX30, D1 => HEX31, D2 => HEX32, D3 => HEX33, D4 => HEX34, D5 => HEX35, D6 => HEX36);
+end contador;

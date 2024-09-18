@@ -1,0 +1,7 @@
+entity 16BitCounter is
+	port(
+		Enable : in std_logic;
+		Clk : in std_logic;
+		Clear : in std_logic;
+	);
+end 16BitCounter;

@@ -1,0 +1,176 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/15577631/Downloads/50MHzCounter-20240917T165229Z-001/50MHzCounter/simulation/modelsim
+Econtador
+Z1 w1726591970
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/15577631/Downloads/50MHzCounter-20240917T165229Z-001/50MHzCounter/T_flip_flop.vhd
+Z5 FC:/Users/15577631/Downloads/50MHzCounter-20240917T165229Z-001/50MHzCounter/T_flip_flop.vhd
+l0
+L18
+V0fReW0R>?V9aT622Cl^m@3
+!s100 dSFSO5RZ0J<;5]_iR46Sz3
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1726592478
+!i10b 1
+Z8 !s108 1726592478.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/15577631/Downloads/50MHzCounter-20240917T165229Z-001/50MHzCounter/T_flip_flop.vhd|
+Z10 !s107 C:/Users/15577631/Downloads/50MHzCounter-20240917T165229Z-001/50MHzCounter/T_flip_flop.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Acontar8bit
+Z13 DEx4 work 11 t_flip_flop 0 22 @Jk4U>OzX^DZ659nf>hZ:1
+R2
+R3
+Z14 DEx4 work 8 contador 0 22 0fReW0R>?V9aT622Cl^m@3
+l74
+L57
+VA7KobCT;fi9F9z[cMZl^90
+!s100 ocnRX9R<3Sn4HF0kCimG13
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Econtador8bitplaca
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L6
+VY1RBEfl0lOOV0gOkcM<7Z2
+!s100 fjEPD9OII;m02F3BFDzem2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Acircuito
+R14
+R2
+R3
+DEx4 work 17 contador8bitplaca 0 22 Y1RBEfl0lOOV0gOkcM<7Z2
+l134
+L108
+V8@HBz9NE6jRHTRKaE:C2k3
+!s100 HAKeITz;Zb;b;;9F14I2c1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eo50mhzcounter
+Z15 w1726592321
+Z16 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z17 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R2
+R3
+Z18 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R0
+Z19 8C:/Users/15577631/Downloads/50MHzCounter-20240917T165229Z-001/50MHzCounter/o50MHzCounter.vhd
+Z20 FC:/Users/15577631/Downloads/50MHzCounter-20240917T165229Z-001/50MHzCounter/o50MHzCounter.vhd
+l0
+L8
+V9>9]KG0PmUNQGB5^O^8iF2
+!s100 =]h_MF:^Ln^nBRB>PM6O<2
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/15577631/Downloads/50MHzCounter-20240917T165229Z-001/50MHzCounter/o50MHzCounter.vhd|
+Z22 !s107 C:/Users/15577631/Downloads/50MHzCounter-20240917T165229Z-001/50MHzCounter/o50MHzCounter.vhd|
+!i113 1
+R11
+R12
+Acontador
+R13
+R14
+R16
+R17
+R2
+R3
+R18
+DEx4 work 13 o50mhzcounter 0 22 9>9]KG0PmUNQGB5^O^8iF2
+l39
+L16
+V^Jl2Q_UGZf;9baoK4W=FH1
+!s100 k>S3gl<77eJTMd4ZO4cQV2
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Et_flip_flop
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L30
+V@Jk4U>OzX^DZ659nf>hZ:1
+!s100 @Ri1An_WeKjF2UN@bG<Ka2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+R13
+l41
+L40
+V[2C4m_DcQ0Ng60hT3jEYa1
+!s100 ch72^hQghiSi6m^QRQzZY0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
