@@ -13,7 +13,7 @@ Parte 1:
 Foi feito em VHDL um contador de 8 bits utilizando 8 flip-flops do tipo T. O arquivo principal a ser aberto pelo software Quartus é o "T_flip_flop.vhd" e ele faz uso dos arquivos "aula4.bdf" e "display.bsf" (criados para a disciplina Prática em Lógica digital) que contém o circuito de um display de 7 segmentos. Quando executado na placa, o primeiro botão representa o Clock e os primeiros interruptores representam respectivamente as entradas Enable e Clear, e os dois primeiros displays de 7 segmentos mostram a contagem em hexadecimal.
 
 Parte 2:
-Foi feito em VHDL um contador de 16 bits utilizando um código simplicado que incrementa o contador sem que se precise definir manualmente a arquitetura dos flip-flops. Ao ser compilada, essa versão do contador utiliza 45 elementos lógicos. O arquivo principal é o "16BitCounter.vhd".
+Foi feito em VHDL um contador de 16 bits utilizando um código simplicado que incrementa o contador sem que se precise definir manualmente a arquitetura dos flip-flops. Ao ser compilada, essa versão do contador utiliza 45 elementos lógicos, enquanto o da parte 1 usava 27. O arquivo principal é o "16BitCounter.vhd".
 
 Parte 3:
 Foi feito um circuito com dois contadores utilizando um código similar ao da parte 2. Um deles conta até 50 milhões tendo como entrada o Clock de 50 MHz da placa FPGA e quando chega nesse número recomeça a contagem e ativa a entrada Enable de um outro contador que conta de 0 a 9, assim efetivamente fazendo com que este atualize seu valor a cada 1 segundo. O arquivo principal é o "o50MHzCounter.vhd" e ele também faz uso dos arquivos "aula4.bdf" e "display.bsf" para utilizar os displays de 7 segmentos para mostrar a contagem de 0 a 9 na placa.
